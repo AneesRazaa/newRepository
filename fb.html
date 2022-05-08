@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook.com</title>
+    <style>
+        body{
+            background-image: url(background\ facebook.jpg);
+        }
+        #main {
+            perspective: 400px;
+            width: 300px;
+            margin-left: 40%;
+            margin-top: 150px;
+            cursor: pointer;
+            
+            
+        }
+
+        #box {
+            height: 185px;
+            width: 250px;
+            background-color: white;
+            background-image: url(facebook\ logo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: rotateX(0deg);
+            transition: 1s;
+            backface-visibility: hidden;
+            
+
+        }
+
+        .desc {
+            font-family: sans-serif;
+            height: 185px;
+            width: 250px;
+            background-color: rgb(179, 176, 176);
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: -185px;
+            transform: rotateX(-180deg);
+            transition: 1s;
+            position: absolute;
+            z-index: -1;
+        }
+
+        #main:hover>#box {
+            transform: rotateX(180deg);
+        }
+
+        #main:hover>.desc {
+            transform: rotateX(0deg);
+        }
+
+        button {
+            border-radius: 30%;
+            margin-top: 50px;
+            margin-left: 25%;
+            background-color: rgba(124, 120, 120, 0.712);
+            cursor: pointer;
+            transition: 1s;
+
+        }
+
+        button:hover {
+            color: red;
+            box-shadow: 0px 5px 30px 10px;
+            background-color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+
+
+        }
+        p{
+            overflow: hidden;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- <-----box-sizing----->
+        <div id="box">
+
+        </div>
+
+
+
+        <!-- <---------typing-work------->
+        <div class="desc">
+            <h2>Facebook: </h2>
+            <p>
+               <h3> NAME : Anees Raza </h3>
+               <h3> AGE : 17 (Years) </h3>
+               
+            </p>
+
+        </div>
+
+
+        <!-- <--------facebook-link-------->
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100041584478008"> <button>Visit Facebook</button> </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
